@@ -1,0 +1,34 @@
+# Ignore Visual Studio temporary files, build results, and user-specific settings
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific folders
+.vs/
+
+# Build results
+bin/
+obj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio Code workspace settings
+.vscode/
+
+# Rider project files
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build Logs
+*.log
+
+# Backup and hidden system files
+Thumbs.db
+ehthumbs
