@@ -15,9 +15,15 @@ namespace CodingPractice
             //ArrayL1.SecondLargestElement();
             //Console.WriteLine(ArrayL1.isSorted());
             //ArrayL1.Unique();
-            int[] arr = { 1, 2, 3, 4, 5 };
+            // int[] arr = { 1, 0, 2, 3, 0, 0, 4, 5 };
+            //int[] arr = { 1, 2, 3,4, 5 };
+            int[] arr = {1, 2, 0, 0, 2, 3};
             //ArrayL2.RotateLeft(arr);
-            ArrayL2.RotateLeftByNTimes(arr, 5);
+            //ArrayL2.RotateLeftByNTimes(arr, 2);
+            //ArrayL2.RotateRightByNTimes(arr, 3);
+            //ArrayL2.RotateRightByNTimesOptimal(arr,3);
+            ArrayL2.MoveZeros(arr);
+            
         }
     }
 }

@@ -11,8 +11,8 @@
 .vs/
 
 # Build results
-bin/
-obj/
+**/bin/
+**/obj/
 [Ll]og/
 [Ll]ogs/
 
