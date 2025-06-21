@@ -12,3 +12,4 @@ C:\Users\2113754\source\repos\Coding_Practice\Coding_Practice\obj\Debug\Coding_P
 C:\Users\2113754\source\repos\Coding_Practice\Coding_Practice\obj\Debug\Coding_Practice.csproj.CoreCompileInputs.cache
 C:\Users\2113754\source\repos\Coding_Practice\Coding_Practice\obj\Debug\Coding_Practice.exe
 C:\Users\2113754\source\repos\Coding_Practice\Coding_Practice\obj\Debug\Coding_Practice.pdb
+C:\Users\rahul\source\repos\Coding_Practice\Coding_Practice\obj\Debug\Coding_Practice.exe.config

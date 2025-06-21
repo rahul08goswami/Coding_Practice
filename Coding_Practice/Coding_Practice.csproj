@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="ArrayL1.cs" />
     <Compile Include="ArrayL2.cs" />
+    <Compile Include="Math.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -40,7 +41,7 @@ namespace CodingPractice
             //    //if (arr[i] == max)
             //    //{
             //    //    sl = arr[i - 1];
-            //    //    break;
+            //    //    continue;
             //    //}
             //    if (arr[i] != max)
             //    {
@@ -54,6 +55,7 @@ namespace CodingPractice
             ////Better O(2n)
             //int[] arr = { 10, 5, 2, 9, 19, 23,52, 29, 29 };
             //int sl = -1;
+            //// Find the Largest in 1st iteration
             //int lar = arr[0];
             ////foreach (var item in arr)
             ////{
@@ -66,6 +68,7 @@ namespace CodingPractice
             //    if (arr[i] > lar)
             //        lar = arr[i];
             //}
+            ////Find the 2nd Largest
             //for (int i = 0; i < arr.Length; i++)
             //{
             //    if (arr[i] > sl && arr[i]!=lar)
@@ -76,6 +79,7 @@ namespace CodingPractice
             //Console.WriteLine("Second Lagest: " + sl);
             #endregion
             #region Optimal
+            // Time Complexity - O(N)
             int[] arr = { 10, 5, 2, 9, 19, 53, 29, 29 };
             int lar = arr[0];
             int sl = int.MinValue;
@@ -96,6 +100,7 @@ namespace CodingPractice
         }
         public static bool isSorted()
         {
+            // TC - O(N)
             //int[] arr = { 10, 5, 2, 9, 19, 23, 52, 29, 29 };
             //int[] arr = { 1, 2, 5, 7, 9 };
             int[] arr = { 4, 5, 4, 4, 4 };
@@ -117,28 +122,53 @@ namespace CodingPractice
         }
         public static void Unique()
         {
-            #region Bruteforce
-            //int[] arr = { 10, 5, 2, 9, 19, 23, 52, 29, 29 };
-            ////List<int> list = new List<int>{ 10, 5, 2, 9, 19, 23, 52, 29, 29 };
+            #region Better
+            int[] arr = { 10, 5, 2, 9, 19, 23, 52, 29, 29 };
+            //List<int> list = new List<int>{ 10, 5, 2, 9, 19, 23, 52, 29, 29 };
             //IEnumerable<int> dist = arr.Distinct<int>();
-            //foreach (var item in dist)
+            List<int> dist = arr.Distinct().ToList();
+            foreach (var item in dist)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine(dist.Count);
+            #endregion
+            #region Bruteforce
+            //int[] arr = { 10, 5, 2,2, 9, 19, 23, 52, 29, 29 };
+            //Dictionary<int, int> dic = new Dictionary<int, int>();
+            //foreach (var item in arr)
             //{
-            //    Console.WriteLine(item);
+            //    if(!dic.ContainsKey(item))
+            //    {
+            //        dic.Add(item, 0);
+            //    }
             //}
+            //foreach (var item in dic)
+            //{
+            //    Console.WriteLine(item.Key);
+            //}
+            //int UniqueCount = dic.Count;
+            //Console.WriteLine("Total Unique Elements: "+ UniqueCount);
+            //int index = 0;
+            //foreach (var key in dic.Keys)
+            //{
+            //    arr[index++] = key;
+            //}
+            //Console.WriteLine();
             #endregion
             #region Optimal
             //int[] arr = { 10, 5, 2, 9, 19, 23, 52, 29, 29 };
-            int[] arr = { 1, 2, 2, 2, 3, 3 };
-            int i = 0;
-            for (int j = 1; j < arr.Length; j++)
-            {
-                if (arr[j] != arr[i])
-                {
-                    arr[i + 1] = arr[j];
-                    i++;
-                }
-            }
-            Console.WriteLine("No of unique elements: "+ (i+1));
+            //int[] arr = { 1, 2, 2, 2, 3, 3 };
+            //int i = 0;
+            //for (int j = 1; j < arr.Length; j++)
+            //{
+            //    if (arr[j] != arr[i])
+            //    {
+            //        arr[i + 1] = arr[j];
+            //        i++;
+            //    }
+            //}
+            //Console.WriteLine("No of unique elements: "+ (i+1));
 
             #endregion
         }
